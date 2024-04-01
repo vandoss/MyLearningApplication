@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/foto_fragment"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/foto_visibility_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:checked="false"
+        android:text="@string/show_picture"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/my_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/foto"
+        android:contentDescription="@string/picture_name"
+        android:visibility="invisible"/>
+
+</LinearLayout>
