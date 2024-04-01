@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.commit {
             setReorderingAllowed(true)
-            add<FotoFragment>(R.id.root_fragment_view)
+            add<ShoppingListFragment>(R.id.root_fragment_view)
         }
 
 
